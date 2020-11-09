@@ -31,6 +31,7 @@ body{
 #new-todo{
     margin-top: 1.5rem;
     margin-bottom: 2rem;
+    margin-left: 5.5rem;
 }
 .btn-main{
     width: 6rem;
@@ -55,4 +56,22 @@ body{
         width: 95%;
         height: auto;
     }
+}
+.remove-btn{
+    float: right;
+    border-radius: 5px;
+    width: 1.5rem;
+    background-color: rgb(240, 10, 10);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    margin-top: 3px;
+}
+.todos-div{
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse: collapse;
+    margin: 2px;
 }

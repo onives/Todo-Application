@@ -56,15 +56,18 @@ const renderTodos = (todos, filters) => {
 // Get the DOM elements for an individual note
 const generateTodoDOM = (todo) => {
     const todoEl = document.createElement('div')
+    todoEl.classList.add('todos-div')
     const checkbox = document.createElement('input')
     const todoText = document.createElement('span')
     const removeButton = document.createElement('button')
+    removeButton.classList.add('remove-btn')
 
     // Setup todo checkbox
     checkbox.setAttribute('type', 'checkbox')
     checkbox.checked = todo.completed
     todoEl.appendChild(checkbox)
     checkbox.addEventListener('change', () => {
+        todoText.style.textDecoration = "line-through";
         toggleTodo(todo.id)
         saveTodos(todos)
         renderTodos(todos, filters)
@@ -85,9 +88,6 @@ const generateTodoDOM = (todo) => {
     //styling the created html elements
     todoText.style.marginLeft = "5px";
     todoText.style.marginRight = "25px";
-    removeButton.style.border ="1px solid  rgb(1, 88, 1)";
-    removeButton.style.borderRadius = "5px";
-    removeButton.style.width = "1.5rem";
     return todoEl
 }
 
