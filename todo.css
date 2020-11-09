@@ -6,7 +6,7 @@ body{
     line-height: 1.8;
     color: #212529;
     text-align: left;
-    background-color: grey;
+    background-color: gray;
 }
 .container{
     display: flex;
@@ -70,7 +70,7 @@ body{
 }
 .todos-div{
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid gray;
     padding: 5px;
     border-collapse: collapse;
     margin: 2px;
