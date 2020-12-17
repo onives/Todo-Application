@@ -5,24 +5,27 @@
         <link rel="stylesheet" href="todo.css">
     </head>
     <body>
-        <div class="container">
-            <h1>To-dos</h1>
-            <div class="nav">
-                <label> Search: 
-                    <input id="search-todo" type="text" placeholder="Search for a To-do">
-                </label>
-                <label>
-                    <input type="checkbox" id="hide-completed">Hide Completed
-                </label>
+        <section class="main-content">
+            <div id="main">
+                <div class="container">
+                    <h1>To-dos</h1>
+                    <div class="nav">
+                        <label> Search: 
+                            <input id="search-todo" type="text" placeholder="Search for a To-do">
+                        </label>
+                        <label>
+                            <input type="checkbox" id="hide-completed">Hide Completed
+                        </label>
+                    </div>
+                    <div id="todos"></div>
+                    <form id="new-todo">
+                        <input class="new-todo-input" type="text" placeholder="Add new to-do" name="text">
+                        <button class="btn-main">Save todo</button>
+                    </form>
+                </div>
             </div>
-            <div id="todos"></div>
-            <form id="new-todo">
-                <input class="new-todo-input" type="text" placeholder="Add new to-do" name="text">
-                <button class="btn-main">Add</button>
-            </form>
-        </div>
+        </section>
         <script src="uuidv4.js"></script>
-        <!-- <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script> -->
         <script src="todo-functions.js"></script>
         <script src="to-do.js"></script>
     </body>
