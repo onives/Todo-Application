@@ -93,7 +93,7 @@ const generateTodoDOM = (todo) => {
 
 // Get the DOM elements for list summary
 const generateSummaryDOM = (incompleteTodos) => {
-    const summary = document.createElement('h2')
+    const summary = document.createElement('h3')
     summary.textContent = `You have ${incompleteTodos.length} todos left`
     return summary
 }
